@@ -9,6 +9,7 @@
   --brand-color-text: #212121;
   --brand-color-our-team: #f5f4fa;
   --brand-color-description: #757575;
+  --border-color: #ececec;
 }
 body {
   font-family: "roboto", sans-serif;
@@ -217,6 +218,10 @@ footer {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--brand-color-text);
+  display: flex;
+  box-sizing: border-box;
+  height: 36px;
+  margin: 20px 24px 0px 24px;
 }
 .project-description {
   font-weight: 400;
@@ -224,6 +229,10 @@ footer {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--brand-color-description);
+  margin: 4px 24px;
+  display: flex;
+  box-sizing: border-box;
+  height: 30px;
 }
 ul {
   list-style: none;
@@ -319,4 +328,46 @@ ul {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+}
+.portfolio-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 94px 8px 50px;
+  margin: 0;
+}
+.btn-spacing {
+  padding: 0px 4px 0px;
+}
+.portfolio-main {
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: var(--border-color);
+}
+.portfolio-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 0;
+}
+.portfolio-item {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  height: 404px;
+  width: 370px;
+  padding: 0px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 1px solid #eeeeee;
+}
+.project-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0px;
 }
